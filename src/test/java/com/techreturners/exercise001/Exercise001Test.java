@@ -20,6 +20,7 @@ public class Exercise001Test {
     }
 
     @Test
+    @Ignore
    
     public void checkHelloAlreadyUppercase() {
         Exercise001 ex001 = new Exercise001();
@@ -54,7 +55,7 @@ public class Exercise001Test {
     }
 
     @Test
-    @Ignore
+    
     public void checkLinuxUsers() {
         Exercise001 ex001 = new Exercise001();
         User u1 = new User("Heather", "Windows 10", "Windows");
