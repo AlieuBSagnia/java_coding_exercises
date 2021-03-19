@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 
+
 public class Exercise001 {
 
     public String capitalizeWord(String word) {
@@ -41,7 +42,11 @@ public class Exercise001 {
 
     public int countLinuxUsers(List<User> users) {
         
-        int count = 0;
+        return (int) users.stream().filter(user->user.getType().toUpperCase().equals("LINUX")).count();
+    }
+    
+
+        /*int count = 0;
 
         for(int i = 0; i < users.size(); i++){
             if (users.get(i).getType().equals("Linux")){
@@ -50,7 +55,6 @@ public class Exercise001 {
             }
         }
 
-        return count;
+        return count;*/    
     
-    }
 }
