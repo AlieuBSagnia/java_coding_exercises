@@ -44,17 +44,4 @@ public class Exercise001 {
         
         return (int) users.stream().filter(user->user.getType().toUpperCase().equals("LINUX")).count();
     }
-    
-
-        /*int count = 0;
-
-        for(int i = 0; i < users.size(); i++){
-            if (users.get(i).getType().equals("Linux")){
-
-                count = count + 1;
-            }
-        }
-
-        return count;*/    
-    
 }
